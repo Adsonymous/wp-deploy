@@ -15,7 +15,7 @@ services:
   wordpress:
     depends_on:
       - db
-    image: Adsonymous/wp-deploy:latest
+    image: cyruslifc/wp-deploy1:latest
     ports:
       - "80:80"
     environment:
