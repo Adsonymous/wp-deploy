@@ -2,8 +2,8 @@
   hosts: docker-server
   tasks:
         - name: Run the Docker build
-          shell: docker-compose -f /root/docker-compose.yml build --no-cache
+          shell: docker-compose -f /root/docker-compose.yaml build --no-cache
 
         - name: Run the Docker container
-          shell: docker-compose -f /root/docker-compose.yml up -d
+          shell: docker-compose -f /root/docker-compose.yaml up -d
 
